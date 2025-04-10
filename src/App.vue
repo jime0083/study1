@@ -1,9 +1,17 @@
 <template>
-  <router-view />
+  <div id="app">
+    <QuestionParent />
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+import QuestionParent from './components/QuestionParent.vue';
+
+export default{
+  name:'App',
+  components:{
+    QuestionParent
+  }
+};
+
 </script>
